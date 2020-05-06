@@ -36,3 +36,51 @@ img {
     display: block;
     margin-bottom: 1rem;
 }
+
+blockquote {
+    box-sizing: border-box;
+    width: 50%;
+    background: white;
+    border-left: 1rem solid #d20c0b;
+    padding: 1.5rem;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+
+blockquote:before {
+    color: #d20c0b;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+}
+
+blockquote em {
+    display: inline;
+}
+
+blockquote strong {
+    color: #d20c0b;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.slideshow-button {
+    cursor: pointer;
+    border: none;
+    color: #d20c0b;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.slideshow-button:hover,
+.slideshow-button:active {
+    color: #e65958;
+}
