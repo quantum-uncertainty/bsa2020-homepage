@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
     <script src="https://kit.fontawesome.com/90e12b3efa.js" crossorigin="anonymous"></script>
   </head>
 
@@ -71,9 +72,12 @@
             <div class="row">
               <div class="ten wide column">
                 <!-- Experience -->
-                <section id="experience">
-                  <h3>Experience</h3>
-                  <ul class="timeline">
+                <div id="experience">
+                  <div class="collapse-button">
+                    <h3>Experience</h3>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <ul class="timeline expanded">
                     <li class="highlighted">
                       <p><em>2017</em></p>
                       <p>Became <strong>45th president of the United States</strong></p>
@@ -166,11 +170,14 @@
                       <p>Began my career at my father's real estate development company, <strong>Elizabeth Trump & Son</strong></p>
                     </li>
                   </ul>
-                </section>
+                </div>
                 <!-- Personal Life -->
-                <section id="personal">
-                  <h3>Personal Life</h3>
-                  <ul class="timeline">
+                <div id="personal">
+                  <div class="collapse-button">
+                    <h3>Personal Life</h3>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                  <ul class="timeline collapsed">
                     <li>
                       <p><em>2006</em></p>
                       <p><strong>Melania gained United States citizenship</strong> and <strong>gave birth to our son, Barron</strong></p>
@@ -212,11 +219,14 @@
                       <p><strong>Married</strong> Czech model <strong>Ivana Zelníčková</strong></p>
                     </li>
                   </ul>
-                </section>
+                </div>
                 <!-- Media career -->
-                <section id="media">
-                  <h3>Media career</h3>
-                  <ul class="timeline">
+                <div id="media">
+                  <div class="collapse-button">
+                    <h3>Media career</h3>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                  <ul class="timeline collapsed">
                     <li>
                       <p><em>2019</em></p>
                       <p>Was awarded <strong>Worst Actor</strong> and <strong>Worst Screen Combo</strong> at Golden Raspberry Awards for parts in <strong><strong>"Death of a Nation"</strong></strong> and <strong><strong>"Fahrenheit 11/9"</strong></strong>
@@ -319,7 +329,7 @@
                       <p>Published a book <strong>"Trump: The Art of the Deal"</strong> in coauthorship with Tony Shwartz</p>
                     </li>
                   </ul>
-                </section>
+                </div>
               </div>
 
               <div class="six wide column">
@@ -390,6 +400,6 @@
         </div>
       </article>
     </main>
+    <script src="./index.js"></script>
   </body>
-
 </html>
