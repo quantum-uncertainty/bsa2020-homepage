@@ -3,12 +3,13 @@ main {
 }
 
 img {
-  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
   border: 1px solid #000000e3;
 }
 
 .collapse-button {
-  background-color: #eee;
+  background: whitesmoke;
   padding: 1.5rem 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -16,7 +17,7 @@ img {
 
 .collapse-button:hover,
 .collapse-button:active {
-  background-color: #ccc;
+  background-color: #e6e6e6;
   cursor: pointer;
 }
 
@@ -95,12 +96,26 @@ blockquote strong {
   border: none;
   outline: none;
   cursor: pointer;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 2rem;
 }
 
 .scroll-to-top:hover,
 .scroll-to-top:active {
-  background-color:rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  position: static;
+}
+
+.tweets {
+  box-shadow: 0 2.5px 25px 0 rgba(34, 36, 38, 0.1);
+  transition: box-shadow 0.2s linear;
+  border-radius: 10px;
+}
+
+.tweets:hover {
+  box-shadow: 0 2.5px 25px 0 rgba(34, 36, 38, 0.3);
 }
