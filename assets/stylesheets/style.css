@@ -41,13 +41,19 @@ img {
 
 blockquote {
   box-sizing: border-box;
-  max-width: 750px;
+  flex-basis: auto;
   background: white;
   border-left: 0.75rem solid #d20c0b;
   padding: 1rem;
   quotes: "\201C""\201D""\2018""\2019";
-  font-size: 1.5rem;
   line-height: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  blockquote {
+    font-size: 1.5rem;
+    width: 50%;
+  }
 }
 
 blockquote::before {
